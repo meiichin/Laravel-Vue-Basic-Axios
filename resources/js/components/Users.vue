@@ -22,7 +22,9 @@
             }
         },
         mounted(){
-
+            axios.get('/api/users').then((response) =>{
+                this.users = response.data
+            })
         }
     }
 </script>
