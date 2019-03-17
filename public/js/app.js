@@ -1818,7 +1818,13 @@ __webpack_require__.r(__webpack_exports__);
       users: []
     };
   },
-  mounted: function mounted() {}
+  mounted: function mounted() {
+    var _this = this;
+
+    axios.get('/api/users').then(function (response) {
+      _this.users = response.data;
+    });
+  }
 });
 
 /***/ }),
