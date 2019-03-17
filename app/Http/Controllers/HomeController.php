@@ -30,4 +30,8 @@ class HomeController extends Controller
     {
         return view('users', ['users' => User::all()]);
     }
+    public function api_users()
+    {
+        return response(User::all());
+    }
 }
