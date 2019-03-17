@@ -1818,13 +1818,7 @@ __webpack_require__.r(__webpack_exports__);
       users: []
     };
   },
-  props: ['data'],
-  mounted: function mounted() {
-    this.users = this.data;
-    console.log(this.users);
-    console.log('lala');
-    console.log(this.data);
-  }
+  mounted: function mounted() {}
 });
 
 /***/ }),
